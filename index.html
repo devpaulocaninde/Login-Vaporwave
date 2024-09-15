@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,900;1,200;1,300;1,500&display=swap" rel="stylesheet">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <form>
+      <h1>Entrar na Plataforma</h1>
+      <div class="input-container">
+        <input id="email" type="email" placeholder="Email" required>
+        <img width="20" height="20" src="https://img.icons8.com/ios/50/user--v1.png" alt="user--v1"/>
+      </div>
+      
+      <div class="input-container">
+        <input id="senha" type="password" placeholder="Senha" required>
+        <img width="20" height="20" src="https://img.icons8.com/ios/50/lock--v1.png" alt="lock--v1"/>
+        <p id="mensS"></p>
+        <a href="#">Esqueci minha senha</a>
+      </div>
+      <button type="submit" onclick="logar(event)">Entrar</button>
+      <div id="message" class="error"></div>
+      
+      <div class="link-cadastro">
+        <p>Não está cadastrado ? <a href="#" >Cadastrar</a></p>
+      </div>
+      
+    </form>
+  </div>
+  <script src="login.js"></script>
+</body>
+</html>
